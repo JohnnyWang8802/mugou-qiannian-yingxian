@@ -1,0 +1,23 @@
+{
+  "errors": [],
+  "metrics": {
+    "three": "180",
+    "geometryBuildMs": 166.89999997615814,
+    "drawCalls": 133,
+    "triangles": 1802808,
+    "geometries": 43,
+    "textures": 9,
+    "pixelRatio": 1,
+    "size": [
+      1440,
+      900
+    ],
+    "bounds": [
+      37.599998474121094,
+      67.31000011444092,
+      44.88000151515007
+    ],
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "reducedMotion": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "idleFramesOver500ms": 0,
+  "zoom": {
+    "distance": 41.99999999999999,
+    "minimum": 42,
+    "maximum": 336.5500005722046,
+    "withinLimits": true
+  },
+  "exportLimitFallback": "设备无法导出 4K，请选择 1920 × 1080。",
+  "exportDimensions": [
+    3840,
+    2160
+  ],
+  "canvasPixelsRestored": true,
+  "webglUnavailableMessage": "当前浏览器无法启用 WebGL 2。请使用支持硬件加速的现代浏览器重新打开。"
+}

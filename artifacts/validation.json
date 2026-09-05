@@ -1,0 +1,111 @@
+{
+  "testedAt": "2026-09-05T21:44:37.263Z",
+  "browser": "145.0.7632.6",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "errors": [],
+  "requests": [],
+  "checks": [
+    {
+      "name": "exploded offsets",
+      "value": [
+        0,
+        8,
+        16,
+        24,
+        32
+      ]
+    },
+    {
+      "name": "restored offsets",
+      "value": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "orbit moves",
+      "value": true
+    },
+    {
+      "name": "drag pauses orbit",
+      "value": true
+    },
+    {
+      "name": "export preserves camera and size",
+      "value": true,
+      "before": {
+        "pos": [
+          96.44209987124448,
+          47.049736150448865,
+          133.94736093228406
+        ],
+        "size": {
+          "x": 1440,
+          "y": 900
+        }
+      },
+      "after": {
+        "pos": [
+          96.44209987124447,
+          47.04973615044886,
+          133.94736093228406
+        ],
+        "size": {
+          "x": 1440,
+          "y": 900
+        }
+      }
+    },
+    {
+      "name": "source dialog",
+      "value": true
+    },
+    {
+      "name": "mobile no overflow",
+      "value": true
+    },
+    {
+      "name": "low quality DPR",
+      "value": 1
+    },
+    {
+      "name": "reduced motion initial orbit off",
+      "value": true
+    }
+  ],
+  "perf": {
+    "medianFrameMs": 9.699999988079071,
+    "p95FrameMs": 17.200000047683716,
+    "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+    "metrics": {
+      "three": "180",
+      "geometryBuildMs": 152.30000001192093,
+      "drawCalls": 133,
+      "triangles": 1802808,
+      "geometries": 43,
+      "textures": 9,
+      "pixelRatio": 1,
+      "size": [
+        1440,
+        900
+      ],
+      "bounds": [
+        37.599998474121094,
+        67.31000011444092,
+        44.88000151515007
+      ],
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "reducedMotion": false
+    }
+  }
+}
