@@ -1,6 +1,7 @@
 import * as T from 'three';
 import {RoundedBoxGeometry} from 'three/addons/geometries/RoundedBoxGeometry.js';
 import {ARCH} from './config';
+import {addPlaques} from './plaques';
 import type {Palette} from './materials';
 const UP=new T.Vector3(0,1,0), TAU=Math.PI*2, START=Math.PI/8;
 const pt=(r:number,a:number,y:number)=>new T.Vector3(Math.sin(a)*r,y,Math.cos(a)*r);
@@ -71,14 +72,9 @@ export function buildPagoda(m:Palette){
  }
  if(i===0){const r=ARCH.baseSpan/2;b.ring(r,8.08,.42,.54,m.red);for(let side=0;side<8;side++)for(let j=0;j<3;j++){const p=facePoint(r,side,j/3,ARCH.baseHeight);b.post(p,4.25,.64);b.bracket(facePoint(r,side,j/3,8.18),START+(side+(j? .5:0))*TAU/8,3);}}
  b.finish();
- if([0,2,4].includes(i)){
- const text=i===0?'城金鎮永':i===2?'塔迦釋':'工神極峻';const y=i===0?7.5:f.postTop-.6;const radius=i===0?15.135:f.radius;
- const p=facePoint(radius,7,.5,y);p.z+=.36;
- const board=new T.Mesh(new T.BoxGeometry(i===0?4.4:4.0,1.25,.18),m.dark);board.position.copy(p);g.add(board);
- const c=document.createElement('canvas');c.width=768;c.height=256;const ctx=c.getContext('2d')!;ctx.fillStyle='#b9a78b';ctx.fillRect(0,0,768,256);ctx.strokeStyle='#70604c';ctx.lineWidth=12;ctx.strokeRect(12,12,744,232);ctx.fillStyle='#3d3429';ctx.font='148px "Songti SC", SimSun, serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(text,384,134,680);
- const tex=new T.CanvasTexture(c);tex.colorSpace=T.SRGBColorSpace;tex.anisotropy=4;const label=new T.Mesh(new T.PlaneGeometry(i===0?4.24:3.84,1.13),new T.MeshStandardMaterial({map:tex,roughness:.95}));label.position.copy(p);label.position.z+=.101;label.name='匾额题名示意（非原书法复刻）';g.add(label);
- }
+
  });
+ addPlaques(floorGroups,m.dark);
  for(const roof of ARCH.roofs){const g=new T.Group();g.name=roof.name;floorGroups[roof.floor].add(g);
  const b=builder(g);const positions:number[]=[],uvs:number[]=[],indices:number[]=[];
  const U=Math.max(ARCH.detail.roofUSegments,Math.ceil(2*roof.outer*Math.sin(Math.PI/8)/ARCH.detail.tilePitch)*6),V=ARCH.detail.roofVSegments;

@@ -22,6 +22,7 @@ export const ARCH = {
   explodeGap:8,
 } as const;
 export const SOURCES=[
+ {"title": "应县木塔匾额位置记录", "author": "张松，《辽沈晚报》，中新网转载，2013-02-20", "url": "https://www.chinanews.com.cn/cul/2013/02-20/4579116.shtml", "supports": "南面主要匾额的明层位置；永镇金城位于北面首层副阶。纪年有冲突，本版不据此标注题写年份。", "rights": "只引用匾额位置事实，不分发照片。"},
  {title:'写不尽的应县木塔！',author:'山西省文化和旅游厅政务账号，2020-12-28',url:'https://m.thepaper.cn/baijiahao_10573858',supports:'方形下台基与八角上台基；平缓檐角；第三层释迦塔、第五层峻极神工题名与位置。',rights:'只引用事实，不复制原书法或照片。'},
  {title:'辽代木构建筑 · 世界遗产预备名录 5803',author:'中国联合国教科文组织全国委员会 / UNESCO，2013',url:'https://whc.unesco.org/en/tentativelists/5803/',supports:'1056 年；地面至塔尖 67.31 米；八角、五层六檐、五明四暗；双圈柱。预备名录不等于已列入世界遗产。',rights:'只引用事实并链接；不再分发网页照片。'},
  {title:'应县木塔变形的过去、现在与将来',author:'吴育华、永昕群，中国文化遗产研究院；论文集，2020 年文件',url:'https://www.cactch.org.cn/webfile/upload/2020/12-21/16-01-480186-1686115651.pdf',supports:'第 409 页：2011 年正南面地面至顶 65.838 米；含副阶面阔 30.27 米；2011 年正南照片。第 411 页历史摄影。第 412 页：二层外槽 24 柱。',rights:'版权未明确开放；仅研究观察，照片不包含在发布项目中。'},
