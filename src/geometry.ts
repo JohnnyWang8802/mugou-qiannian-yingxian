@@ -38,7 +38,8 @@ export function buildPagoda(m:Palette){
  };
  return {b,beam,post,block,ring,bracket,finish:()=>b.finish(group)};}
  const base=new T.Group();base.name='台基与台阶';root.add(base);const bb=builder(base);
- for(const [r,h,y]of [[18.5,.45,.225],[18.1,2.8,1.85],[18.45,.55,3.525]]){const mesh=new T.Mesh(y<1?new T.BoxGeometry(37.6,h,37.6):new T.CylinderGeometry(r,r,h,8,1,false,START),m.stone);mesh.position.y=y;mesh.receiveShadow=true;mesh.castShadow=true;base.add(mesh);}
+ // The display omits the projecting square lower plinth so the octagonal base meets the seamless floor cleanly.
+ for(const [r,h,y]of [[18.1,3.25,1.625],[18.45,.55,3.525]]){const mesh=new T.Mesh(new T.CylinderGeometry(r,r,h,8,1,false,START),m.stone);mesh.name='八角塔基';mesh.position.y=y;mesh.receiveShadow=true;mesh.castShadow=true;base.add(mesh);}
  for(let side=0;side<8;side++)for(let row=0;row<5;row++)for(let col=0;col<12;col++){
  const a=facePoint(18.115,side,(col+(row%2)*.5)/12,.55+row*.55);const z=facePoint(18.115,side,Math.min(1,(col+1+(row%2)*.5)/12),.55+row*.55);bb.beam(a,z,.022,.025,m.dark,'石缝');}
  for(const sign of [-1,1])for(let step=0;step<13;step++){const h=(step+1)*ARCH.baseHeight/13;bb.block(new T.Vector3(0,h/2,sign*(22.2-step*.43)),new T.Vector3(5.1,h,.48),m.stone,'台阶');}
