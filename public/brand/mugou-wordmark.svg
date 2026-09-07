@@ -1,17 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 104" fill="#403b30">
   <title>木構千年</title>
-  <!-- Original lettering: slender beams, tapered posts and stepped terminals. -->
+  <!-- Original optical lettering. Dense strokes are lighter; open glyphs narrower.
+       Level crossbeams and restrained wedge terminals share one construction. -->
   <g transform="translate(3 2)">
-    <path d="M43 6h13l-2 5v76l-5 7-6-4 2-6V13zM7 31h76l8-5 5 11H7zM43 37h8C40 60 25 77 4 86l-3-4C21 67 34 52 43 37ZM55 37C65 55 77 68 97 77l-10 10C71 76 60 58 51 40Z"/>
+    <path d="M44 7h10v85H44zM6 32h77l7-3 4 8H6zM43 37h8C40 59 25 77 5 86l-3-3C21 67 34 51 43 37ZM55 37C66 55 79 69 96 78l-7 8C72 75 59 57 51 40Z"/>
   </g>
   <g transform="translate(115 2)">
-    <path d="M17 7h10l-1 5v77l-5 5-5-3 2-7V13zM0 31h34l5-4 4 10H0zM16 38h8C19 56 12 67 1 77l-3-4C6 60 12 49 16 38ZM27 42l15 16-7 8-11-21z"/>
-    <path d="M49 7h9v31h-9zM76 7h9v31h-9zM43 17h48l5-4 4 9H43zM44 28h49v5H44zM39 39h57l5-4 4 10H39zM48 50h46v5H48zM44 50h9v39l-5 5-4-2zM86 50h10v38l-6 6-14-9v-4l10 2zM52 64h36v5H52zM36 77h61l5-4 4 10H36zM64 44h9v34h-9z"/>
+    <path d="M17 7h8v85h-8zM0 32h32l5-3 4 8H0zM16 38h7C19 55 11 69 1 78l-2-3C7 60 12 49 16 38ZM26 43l13 14-5 7-10-19z"/>
+    <path d="M51 7h7v33h-7zM78 7h7v33h-7zM43 17h48l5-3 3 7H43zM45 28h49v4H45zM40 40h56l5-3 3 7H40zM47 52h45v4H47zM44 52h7v40h-7zM88 52h8v36q0 5-5 5l-12-7v-3l9 2zM51 65h38v4H51zM38 79h59l5-3 3 7H38zM66 44h7v35h-7z"/>
   </g>
-  <g transform="translate(232 2)">
-    <path d="M14 25C37 21 60 14 76 5l10 10C65 23 38 28 15 30zM44 24h12l-2 5v59l-6 7-5-4 2-7zM2 47h80l9-5 6 11H2z"/>
+  <g transform="translate(239 2) scale(.88 1)">
+    <path d="M12 25C35 21 59 14 78 6l7 8C65 23 38 28 13 30zM44 24h12v68H44zM1 47h81l8-3 5 9H1z"/>
   </g>
   <g transform="translate(345 2)">
-    <path d="M23 5l12 4C29 23 19 36 5 46l-4-3C12 30 19 17 23 5zM27 20h52l8-5 6 11H25zM18 43h58l7-5 5 11H18zM0 68h81l8-5 6 11H0zM48 26h12l-2 5v57l-6 7-5-4 2-7zM17 43h10v25H17z"/>
+    <path d="M23 6l10 3C28 23 18 37 5 46l-3-2C12 30 19 17 23 6zM26 21h54l7-3 4 8H25zM18 44h59l6-3 4 8H18zM0 69h81l8-3 4 8H0zM48 26h10v66H48zM17 44h9v25H17z"/>
   </g>
 </svg>
