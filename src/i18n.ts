@@ -58,7 +58,7 @@ export function localize(){
  document.documentElement.lang=language;document.body.dataset.language=language;
  document.title=language==='en'?'A Millennium in Timber · Yingxian Wooden Pagoda':language==='zh-TW'?'木構千年 · 應縣木塔 | Yingxian Wooden Pagoda':'木构千年 · 应县木塔 | Yingxian Wooden Pagoda';
  document.querySelector('meta[name="description"]')?.setAttribute('content',language==='en'?'Explore a real-time exterior study of Yingxian Wooden Pagoda, based on public references.':language==='zh-TW'?'木構千年：基於公開資料的應縣木塔三維外觀視覺復刻與互動展陳。':'木构千年：基于公开资料的应县木塔三维外观视觉复刻与交互展陈。');
- const root=document.querySelector('#app')!;const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);while(walker.nextNode()){const node=walker.currentNode;if(node.parentElement?.closest('#language,#notice'))continue;node.textContent=t(node.textContent||'');}
+ const root=document.querySelector('#app')!;const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);while(walker.nextNode()){const node=walker.currentNode;if(node.parentElement?.closest('#language,#notice,[translate="no"]'))continue;node.textContent=t(node.textContent||'');}
  root.querySelectorAll<HTMLElement>('[aria-label]').forEach(e=>{if(e.id!=='language')e.setAttribute('aria-label',t(e.getAttribute('aria-label')!));});
  const select=document.querySelector<HTMLSelectElement>('#language');if(select)select.value=language;
 }
