@@ -1,50 +1,67 @@
-# 木构千年 · Yingxian Wooden Pagoda
+# Wooden Millennium · Yingxian Wooden Pagoda
 
-可运行的应县木塔实时三维展陈。Vite + TypeScript + Three.js，不依赖后端、外部贴图或付费服务。建筑单位为米，外观五层六檐；细节属于有明确边界的视觉近似。
+An interactive real-time 3D exhibition study of the Yingxian Wooden Pagoda. Built with Vite, TypeScript, and Three.js. The project is a source-backed exterior visual reconstruction; it is not a survey, restoration, or structural engineering model.
 
-## 启动
+**Live website:** [mugou-qiannian-yingxian.pages.dev](https://mugou-qiannian-yingxian.pages.dev/)
 
-推荐 Node.js 22.12+。
+The interface is available in Simplified Chinese, Traditional Chinese, and English:
+
+- `/?lang=zh-CN`
+- `/?lang=zh-TW`
+- `/?lang=en`
+
+## Screenshots
+
+![English desktop view](docs/screenshots/english-desktop.png)
+
+![Three-quarter hero](docs/screenshots/hero.png)
+
+![Mobile view](docs/screenshots/english-mobile.png)
+
+## Run locally
+
+Requires Node.js 22.12 or newer.
 
 ```sh
 npm ci
 npm run dev
 ```
 
-本地地址：http://127.0.0.1:5173/ 。默认材质场景；`/?clay` 直接打开白模。
+Open `http://127.0.0.1:5173/`. Use `/?clay` to start in the white-model view.
 
 ```sh
 npm run build
 npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-构建结果在 `dist/`，可以部署到普通静态网站服务；请用 HTTP 服务打开，不能双击 HTML 代替服务器。依赖由 `package-lock.json` 锁定。
+## Interaction
 
-## 操作
+- Drag to orbit; use the wheel or pinch gesture to zoom.
+- Use the six camera presets: three-quarter, front, side, top, low angle, and bracket detail.
+- Switch between material and white-model views, daylight and dusk, and the presentation-only floor separation.
+- The scene is static by default. “More” enables a slow orbit; manual interaction pauses it.
+- Reset restores the material, daylight, assembled state, default camera, and device quality.
+- Hide the interface for a clean view. Export a 3840×2160 or 1920×1080 PNG without the interface.
 
-- 拖动旋转；滚轮、双指缩放。画布获得焦点后，方向键转动，`+` / `-` 缩放。
-- 六个预设：三分之四、正面、侧面、俯视、低机位、斗拱近景。
-- 下方切换白模、傍晚与展示性楼层展开。默认静止；“更多”可开启慢速环绕，手动拖动即暂停。
-- “复位”恢复材质、日光、组装状态、默认镜头与设备默认质量。
-- `H` 或“更多 → 隐藏界面”进入纯观看；右下角可恢复。
-- “更多”可选择精细/流畅，导出 3840×2160 或 1920×1080 PNG。导出不含界面，采用独立画布、相同色彩流程和按当前观察方向重新构图的相机，不改变交互画面。
-- “资料与说明”提供来源、尺寸口径差异和近似范围；支持键盘关闭与焦点管理。
+## Architecture
 
-## 文件职责
+- `src/config.ts` — centralized architectural parameters, floor/eave definitions, seed, and source index.
+- `src/geometry.ts` — platform, timber frame, galleries, railings, bracket sets, curved roofs, and finial.
+- `src/materials.ts` — procedural weathered timber, stone, grey tile, and white-model materials.
+- `src/environment.ts` — exhibition ground, daylight/dusk lighting, and shadow settings.
+- `src/camera.ts` — bounding-box-based camera presets and export framing.
+- `src/export.ts` — off-screen export, capability checks, and resource cleanup.
+- `src/ui.ts`, `src/style.css`, `src/layout.css` — exhibition label interface and responsive layout.
+- `docs/REFERENCES.md` — references, measurement tiers, conflicts, and floor correspondence.
+- `docs/VALIDATION.md` — tested environments, checks, and known limitations.
 
-- `src/config.ts`：统一建筑参数、五层与六檐定义、固定种子、资料索引。
-- `src/geometry.ts`：台基、柱梁、柱廊、栏杆门窗、斗拱、曲面瓦顶、塔刹与楼层组。
-- `src/materials.ts`：程序木纹、石材、灰瓦和白模，颜色贴图与数据贴图分别设置色彩空间。
-- `src/environment.ts`：暖灰地面、日光/傍晚、阴影范围。
-- `src/camera.ts`：基于实际包围盒的镜头构图与导出相机。
-- `src/export.ts`：设备尺寸检查、独立 4K 渲染、PNG 下载、资源释放。
-- `src/ui.ts`、`src/style.css`：展览铭牌式界面、资料弹窗与响应式布局。
-- `src/main.ts`：交互状态、按需渲染、质量切换、上下文丢失处理。
-- `docs/REFERENCES.md`：来源、尺度分级、冲突取舍与楼层对应表。
-- `docs/VALIDATION.md`：实际验证环境、结果与已知限制。
-- `artifacts/`：实际截图、4K 主视觉、机器记录与可复跑的浏览器检查脚本。
+## Research scope
 
-## 复跑浏览器检查
+The model uses public institutional, academic, and photographic references to establish the overall octagonal plan, five visible storeys, six eave levels, gallery rhythm, roof sequence, and finial. Dimensions are separated into sourced values, image-based estimates, and unknowns. Detailed floor geometry, joinery, roof curves, plaques, and weathering remain editable visual approximations.
+
+The model includes no hidden complete interior, complete joinery system, or claimed present-day deformation. It must not be used for conservation, measurement, restoration, or structural decisions.
+
+## Validation
 
 ```sh
 npx playwright install chromium
@@ -52,12 +69,8 @@ node artifacts/check.mjs
 node artifacts/validate.mjs
 ```
 
-另一个终端须保持本地服务运行。可用 `CHROME_PATH` 指定已有 Chromium 可执行文件。脚本检查真实页面并保存截图，性能数据只代表运行脚本时的设备与浏览器。
+Keep the local development server running in another terminal. The browser checks cover the three languages, camera state, responsive layout, export flow, and key interaction states. Performance observations are specific to the test machine and browser.
 
-## 精度范围
+## License
 
-67.31 m 总高包括展示地面至塔刹顶；30.27 m 为来源记载的含副阶面阔，模型对角解释尚待完整测绘核查。所有逐层尺寸、构件细节和屋面曲线为可编辑的视觉近似。没有建造不可见的完整内部、完整榫卯或现状变形，不可用于文物修复、测绘或结构工程。
-
-## 语言版本
-
-右上角支持简体中文、繁體中文、English，切换保留三维相机与展陈状态，选择保存在本机。也可使用 `?lang=zh-CN`、`?lang=zh-TW`、`?lang=en` 直接打开对应版本。界面、资料与说明、辅助标签、导出/错误提示已翻译；建筑匾额作为模型内容保留原中文题名。翻译集中于 `src/i18n.ts`。
+Source code is released under the license in `LICENSE`. The model uses procedural materials and locally bundled assets; no third-party image hotlinks or paid AI modeling services are required.
