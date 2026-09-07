@@ -1,5 +1,5 @@
 {
-  "testedAt": "2026-09-05T21:44:37.263Z",
+  "testedAt": "2026-09-07T06:10:23.482Z",
   "browser": "145.0.7632.6",
   "viewport": {
     "width": 1440,
@@ -84,16 +84,16 @@
     }
   ],
   "perf": {
-    "medianFrameMs": 9.699999988079071,
-    "p95FrameMs": 17.200000047683716,
+    "medianFrameMs": 14.300000011920929,
+    "p95FrameMs": 28.80000001192093,
     "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
     "metrics": {
       "three": "180",
-      "geometryBuildMs": 152.30000001192093,
-      "drawCalls": 133,
-      "triangles": 1802808,
-      "geometries": 43,
-      "textures": 9,
+      "geometryBuildMs": 191.80000001192093,
+      "drawCalls": 160,
+      "triangles": 1803082,
+      "geometries": 70,
+      "textures": 14,
       "pixelRatio": 1,
       "size": [
         1440,

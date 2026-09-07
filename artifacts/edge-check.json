@@ -6,6 +6,31 @@
     "maximum": 336.5500005722046,
     "withinLimits": true
   },
+  "cameraPreservedAcrossHideAndQuality": true,
+  "cameraBeforeDisplayChanges": {
+    "position": [
+      27.4603840924519,
+      38.05227562561656,
+      31.972755683960987
+    ],
+    "target": [
+      0,
+      34.15500005722046,
+      0
+    ]
+  },
+  "cameraAfterDisplayChanges": {
+    "position": [
+      27.46038409245189,
+      38.05227562561655,
+      31.97275568396097
+    ],
+    "target": [
+      0,
+      34.15500005722046,
+      0
+    ]
+  },
   "exportLimitFallback": "设备无法导出 4K，请选择 1920 × 1080。",
   "exportDimensions": [
     3840,

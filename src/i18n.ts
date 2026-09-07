@@ -47,7 +47,11 @@ const rows: [string,string,string][] = [
 ];
 const lookup=new Map<string,[string,string,string]>();for(const row of rows)for(const value of row)lookup.set(value.trim(),row);
 let language:Language='zh-CN';
-try{const saved=new URLSearchParams(location.search).get('lang')||localStorage.getItem('pagoda-language');if(saved==='en'||saved==='zh-TW'||saved==='zh-CN')language=saved;}catch{/* Storage may be disabled. */}
+try{
+ const query=new URLSearchParams(location.search).get('lang');
+ const saved=query==='en'||query==='zh-TW'||query==='zh-CN'?query:localStorage.getItem('pagoda-language');
+ if(saved==='en'||saved==='zh-TW'||saved==='zh-CN')language=saved;
+}catch{/* Storage may be disabled. */}
 export function t(text:string):string {const key=text.trim();const arrow=key.endsWith(' ↗');const row=lookup.get(arrow?key.slice(0,-2):key);if(arrow&&row)return text.replace(key,row[language==='en'?2:language==='zh-TW'?1:0]+' ↗');return row?text.replace(key,row[language==='en'?2:language==='zh-TW'?1:0]):text;}
 export function rendering(width:number,height:number){return language==='en'?`Rendering ${width} × ${height} image…`:language==='zh-TW'?`正在算繪 ${width} × ${height} 圖片…`:`正在渲染 ${width} × ${height} 图片…`;}
 export function localize(){
