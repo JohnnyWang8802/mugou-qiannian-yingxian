@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444 104" fill="#403b30">
+  <title>木構千年</title>
+  <!-- Original lettering: slender beams, tapered posts and stepped terminals. -->
+  <g transform="translate(3 2)">
+    <path d="M43 6h13l-2 5v76l-5 7-6-4 2-6V13zM7 31h76l8-5 5 11H7zM43 37h8C40 60 25 77 4 86l-3-4C21 67 34 52 43 37ZM55 37C65 55 77 68 97 77l-10 10C71 76 60 58 51 40Z"/>
+  </g>
+  <g transform="translate(115 2)">
+    <path d="M17 7h10l-1 5v77l-5 5-5-3 2-7V13zM0 31h34l5-4 4 10H0zM16 38h8C19 56 12 67 1 77l-3-4C6 60 12 49 16 38ZM27 42l15 16-7 8-11-21z"/>
+    <path d="M49 7h9v31h-9zM76 7h9v31h-9zM43 17h48l5-4 4 9H43zM44 28h49v5H44zM39 39h57l5-4 4 10H39zM48 50h46v5H48zM44 50h9v39l-5 5-4-2zM86 50h10v38l-6 6-14-9v-4l10 2zM52 64h36v5H52zM36 77h61l5-4 4 10H36zM64 44h9v34h-9z"/>
+  </g>
+  <g transform="translate(232 2)">
+    <path d="M14 25C37 21 60 14 76 5l10 10C65 23 38 28 15 30zM44 24h12l-2 5v59l-6 7-5-4 2-7zM2 47h80l9-5 6 11H2z"/>
+  </g>
+  <g transform="translate(345 2)">
+    <path d="M23 5l12 4C29 23 19 36 5 46l-4-3C12 30 19 17 23 5zM27 20h52l8-5 6 11H25zM18 43h58l7-5 5 11H18zM0 68h81l8-5 6 11H0zM48 26h12l-2 5v57l-6 7-5-4 2-7zM17 43h10v25H17z"/>
+  </g>
+</svg>

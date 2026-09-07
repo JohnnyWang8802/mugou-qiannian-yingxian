@@ -1,27 +1,17 @@
-/* A compact typographic signature: traditional characters remain the identity
-   in all locales; the accompanying wordmark and accessible name are localized. */
-.masthead .brand{display:inline-flex;align-items:center;gap:17px;max-width:none;color:#35382f;text-decoration:none;letter-spacing:0;flex-shrink:0}
-.brand-signature{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);width:56px;height:56px;flex-shrink:0;color:#84533e;font-family:"Songti TC","Songti SC","Noto Serif CJK TC","PMingLiU",serif;font-weight:700;font-size:28px;line-height:1;letter-spacing:-.08em;position:relative;padding:2px 3px 2px 0}
-.brand-signature span{display:flex;align-items:center;justify-content:center}
-.brand-signature::after{content:"";position:absolute;right:-6px;top:4px;bottom:3px;width:1px;background:#84533e80}
-.brand-lockup{display:flex;flex-direction:column;gap:7px;padding-left:2px}
-.brand-title{font-family:"Songti SC","Noto Serif CJK SC","SimSun",serif;font-size:23px;line-height:1.1;font-weight:600;letter-spacing:.2em}
-.brand-english{font-family:Georgia,"Times New Roman",serif;font-size:10px;line-height:1.3;letter-spacing:.12em;color:#626457}
-.brand-english br{display:none}
-body[data-language=zh-TW] .brand-title{font-family:"Songti TC","Noto Serif CJK TC","PMingLiU",serif}
-body[data-language=en] .masthead .brand{max-width:none}
-body[data-language=en] .brand-title{display:none}
-body[data-language=en] .brand-english{font-size:15px;line-height:1.3;letter-spacing:.07em;color:var(--ink)}
-body[data-language=en] .brand-english br{display:block}
+/* Original vector lettering stays consistent across all three locales. */
+.masthead .brand,body[data-language=en] .masthead .brand{display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:none;width:218px;flex-shrink:0;text-decoration:none;color:#403b30;letter-spacing:0}
+.brand-wordmark{display:block;width:218px;height:auto}
+.brand-english{display:flex;align-items:baseline;justify-content:center;width:100%;font-family:Georgia,"Times New Roman",serif;font-size:9px;line-height:1.2;letter-spacing:.095em;white-space:nowrap;color:#68604f}
+.brand-english span+span{margin-left:.6em}
 @media(max-width:760px){
- .masthead .brand{gap:12px}
- .brand-signature{width:38px;height:40px;font-size:21px;padding:0 2px 0 0}
- .brand-signature::after{right:-5px;top:2px;bottom:2px}
- .brand-lockup{gap:4px}
- .brand-title{font-size:18px;letter-spacing:.14em}
- .brand-english{font-size:8px;letter-spacing:.06em;line-height:1.25}
- .brand-english br{display:block}
- body[data-language=en] .brand-english{font-size:10px;letter-spacing:.04em}
+ .masthead .brand,body[data-language=en] .masthead .brand{width:145px;gap:5px}
+ .brand-wordmark{width:145px}
+ .brand-english{font-size:7px;letter-spacing:.01em}
  .header-actions{gap:2px}
 }
-@media(max-width:360px){.masthead{left:14px;right:10px}.masthead .brand{gap:10px}.brand-signature{width:34px;height:36px;font-size:19px}.brand-title{font-size:16px}.brand-english{font-size:7px}.header-actions .text-button{padding-left:4px;padding-right:4px}}
+@media(max-width:360px){
+ .masthead{left:14px;right:10px}
+ .masthead .brand,body[data-language=en] .masthead .brand,.brand-wordmark{width:130px}
+ .brand-english{font-size:6.5px}
+ .header-actions .text-button{padding-left:4px;padding-right:4px}
+}
