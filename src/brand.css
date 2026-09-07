@@ -1,17 +1,17 @@
 /* Original vector lettering stays consistent across all three locales. */
-.masthead .brand,body[data-language=en] .masthead .brand{display:flex;flex-direction:column;align-items:flex-start;gap:8px;max-width:none;width:218px;flex-shrink:0;text-decoration:none;color:#403b30;letter-spacing:0}
-.brand-wordmark{display:block;width:218px;height:auto}
-.brand-english{display:flex;align-items:baseline;justify-content:center;width:100%;font-family:Arial,"Helvetica Neue",sans-serif;font-size:9px;line-height:1.3;letter-spacing:.16em;white-space:nowrap;color:#625b4e}
+.masthead .brand,body[data-language=en] .masthead .brand{display:flex;flex-direction:column;align-items:flex-start;gap:6px;max-width:none;width:140px;flex-shrink:0;text-decoration:none;color:#403b30;letter-spacing:0}
+.brand-wordmark{display:block;width:100%;height:auto}
+.brand-english{display:flex;align-items:baseline;justify-content:center;width:100%;font-family:Arial,"Helvetica Neue",sans-serif;font-size:7px;line-height:1.3;letter-spacing:.025em;white-space:nowrap;color:#625b4e}
 .brand-english span+span{margin-left:.6em}
 @media(max-width:760px){
- .masthead .brand,body[data-language=en] .masthead .brand{width:145px;gap:5px}
- .brand-wordmark{width:145px}
+ .masthead .brand,body[data-language=en] .masthead .brand{width:104px;gap:5px}
+ .brand-wordmark{width:100%}
  .brand-english{font-size:7px;letter-spacing:.025em}
  .header-actions{gap:2px}
 }
 @media(max-width:360px){
  .masthead{left:14px;right:10px}
- .masthead .brand,body[data-language=en] .masthead .brand,.brand-wordmark{width:130px}
+ .masthead .brand,body[data-language=en] .masthead .brand{width:100px}
  .brand-english{font-size:6.5px}
  .header-actions .text-button{padding-left:4px;padding-right:4px}
 }

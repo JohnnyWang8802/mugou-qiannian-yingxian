@@ -2,6 +2,7 @@ import {bindLanguage, t, rendering} from './i18n';
 import * as T from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {ARCH} from './config';import {materials} from './materials';import {buildPagoda} from './geometry';import {environment} from './environment';import {cameras, type View} from './camera';import {exportImage,download} from './export';import {mount} from './ui';import './style.css';
+import './layout.css';
 mount();bindLanguage();await new Promise<void>(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>resolve())));const $=<E extends HTMLElement=HTMLElement>(id:string)=>document.getElementById(id) as E;
 const state={clay:new URLSearchParams(location.search).has('clay'),evening:false,explode:false,orbit:false,hidden:false,quality:innerWidth<760?'low':'high'};
 const reduced=matchMedia('(prefers-reduced-motion: reduce)');
