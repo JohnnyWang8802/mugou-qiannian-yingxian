@@ -1,0 +1,12 @@
+import {chromium} from '@playwright/test';
+import {mkdir,readFile,writeFile} from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const audit=JSON.parse(await readFile('public/models/tile-normal-audit.json','utf8'));assert.equal(audit.groups.length,18);assert(audit.groups.every(g=>g.after.reversedCorners===0));
+await mkdir('artifacts/roof-fix',{recursive:true});const b=await chromium.launch({headless:false,channel:'chrome'});const p=await b.newPage({viewport:{width:1440,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));const base=process.env.TEST_URL||'http://127.0.0.1:5173';await p.goto(base+'/?lang=zh-CN');await p.waitForFunction(()=>window.__ready,null,{timeout:120000});await p.locator('#entrance').waitFor({state:'detached',timeout:120000});
+await p.screenshot({path:'artifacts/roof-fix/overview.png'});
+await p.evaluate(()=>{const d=window.__pagoda;d.hide(true);d.controls.minDistance=1;d.controls.target.set(0,43.5,11);d.camera.position.set(12,55,35);d.controls.update();d.render()});await p.screenshot({path:'artifacts/roof-fix/day.png'});
+assert(await p.evaluate(()=>{let smooth=true;window.__pagoda.pagoda.root.traverse(m=>{if(m.isMesh&&m.userData.category==='roof'&&m.material.flatShading)smooth=false});return smooth}));
+await p.evaluate(()=>{document.querySelector('#evening').click();window.__pagoda.render()});await p.screenshot({path:'artifacts/roof-fix/dusk.png'});
+await p.evaluate(()=>{const d=window.__pagoda;document.querySelector('#evening').click();d.controls.target.set(1,43.5,12);d.camera.position.set(6,49,23);d.controls.update();d.render()});await p.screenshot({path:'artifacts/roof-fix/close.png'});
+await p.evaluate(()=>{const d=window.__pagoda;d.setClay(true);d.render()});await p.screenshot({path:'artifacts/roof-fix/clay.png'});
+assert.deepEqual(errors,[]);const metrics=await p.evaluate(()=>window.__pagoda.metrics());await writeFile('artifacts/roof-fix/checks.json',JSON.stringify({date:new Date().toISOString(),base,browser:await b.version(),groups:18,reversedBefore:audit.groups.reduce((n,g)=>n+g.before.reversedCorners,0),reversedAfter:0,smoothMaterialsRetained:true,metrics,errors},null,2));await b.close();console.log('PASS: 18 groups corrected; smooth rendering retained; no browser errors');

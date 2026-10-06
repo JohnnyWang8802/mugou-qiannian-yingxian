@@ -10,7 +10,20 @@ The interface is available in Simplified Chinese, Traditional Chinese, and Engli
 - `/?lang=zh-TW`
 - `/?lang=en`
 
-## Screenshots
+## Current Blender edition
+
+The current Blender research model is integrated into the main exhibition. Select **Explore** to isolate storeys, hide roofs and enclosure, inspect a cutaway, separate floors, and visit bracket, inner-frame and finial close views. The original exhibition remains available at [legacy.html](https://mugou-qiannian-yingxian.pages.dev/legacy.html).
+
+This model still contains estimated and unfinished historical details. Web assets simplify dense geometry and approximate Blender procedural materials with PBR colours. See [integration notes](docs/blender-integration.md) for scope and validation.
+
+![Current Blender exhibition](artifacts/roof-fix/overview.png)
+![Minimal loading screen](artifacts/entrance/auto-desktop.png)
+![Corrected roof detail](artifacts/roof-fix/close.png)
+![Inner framing inspection](artifacts/blender-integration/inner.png)
+
+The entrance displays measured loading progress and opens the exhibition automatically. Language selection remains available inside the exhibition. See [entrance notes](docs/entrance.md).
+
+## Original exhibition screenshots
 
 ![English desktop view](docs/screenshots/english-desktop.png)
 
@@ -45,6 +58,11 @@ npm run preview -- --host 127.0.0.1 --port 4173
 
 ## Architecture
 
+- `src/blender-model.ts` — compressed GLB loading, storey groups, and inspection visibility.
+- `src/explorer.ts`, `src/explorer.css` — model exploration controls and detail views.
+- `src/entrance.ts`, `src/entrance.css` — measured loading progress, automatic entry, and failure recovery.
+- `public/models/` — ready-to-load Blender-derived web assets, manifest, and tile-normal audit.
+- `scripts/export-blender.py` — non-destructive Blender-to-web export and normal corrections.
 - `src/config.ts` — centralized architectural parameters, floor/eave definitions, seed, and source index.
 - `src/geometry.ts` — platform, timber frame, galleries, railings, bracket sets, curved roofs, and finial.
 - `src/materials.ts` — procedural weathered timber, stone, grey tile, and white-model materials.
@@ -64,12 +82,14 @@ The model includes no hidden complete interior, complete joinery system, or clai
 ## Validation
 
 ```sh
-npx playwright install chromium
-node artifacts/check.mjs
-node artifacts/validate.mjs
+# Current Blender edition (requires locally installed Google Chrome)
+node scripts/verify-blender.mjs
+node scripts/check-entrance.mjs
+node scripts/check-roof.mjs
+node scripts/check-staircase.mjs
 ```
 
-Keep the local development server running in another terminal. The browser checks cover the three languages, camera state, responsive layout, export flow, and key interaction states. Performance observations are specific to the test machine and browser.
+Keep the local development server running in another terminal. These checks launch headed Chrome because headless WebGL was unavailable in the validation environment. The browser checks cover the three languages, camera state, responsive layout, export flow, and key interaction states. Performance observations are specific to the test machine and browser.
 
 ## License
 

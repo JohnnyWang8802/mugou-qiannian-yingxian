@@ -1,5 +1,8 @@
 export type Language = 'zh-CN' | 'zh-TW' | 'en';
 const rows: [string,string,string][] = [
+['正在加载精细模型','正在載入精細模型','Loading detailed model'],
+['精细模型加载失败，请重试。','精細模型載入失敗，請重試。','The detailed model could not load. Please retry.'],
+['重新加载','重新載入','Retry'],['打开原版展陈','開啟原版展陳','Open the original exhibition'],
 ["应县木塔匾额位置记录", "應縣木塔匾額位置記錄", "Plaque locations at Yingxian Wooden Pagoda"],["张松，《辽沈晚报》，中新网转载，2013-02-20", "張松，《遼瀋晚報》，中新網轉載，2013-02-20", "Zhang Song, Liaoshen Evening News; China News repost, 2013-02-20"],["南面主要匾额的明层位置；永镇金城位于北面首层副阶。纪年有冲突，本版不据此标注题写年份。", "南面主要匾額的明層位置；永鎮金城位於北面首層副階。紀年有衝突，本版不據此標註題寫年份。", "Locates principal southern plaques and Yong Zhen Jin Cheng on the north ground-storey outer colonnade. Conflicting dates are not presented as established inscription dates."],["只引用匾额位置事实，不分发照片。", "只引用匾額位置事實，不分發照片。", "Plaque-location facts cited only; photographs are not redistributed."],
 ['木构千年','木構千年','A Millennium in Timber'],['木构千年首页','木構千年首頁','A Millennium in Timber — home'],
 ['应县木塔','應縣木塔','Yingxian Wooden Pagoda'],['资料与说明','資料與說明','Sources & notes'],

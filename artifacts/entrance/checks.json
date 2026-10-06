@@ -1,0 +1,18 @@
+{
+  "base": "http://127.0.0.1:5173",
+  "date": "2026-10-06T18:17:50.976Z",
+  "browser": "154.0.8037.98",
+  "checks": [
+    "actual partial byte progress",
+    "no Start button while loading",
+    "automatic entry without clicking",
+    "focus transfer",
+    "no entrance language selector; exhibition languages retained",
+    "390px layout",
+    "explorer after entry",
+    "reduced motion",
+    "failure stays visible",
+    "retry then automatic entry"
+  ],
+  "errors": []
+}

@@ -1,0 +1,275 @@
+{
+  "groups": [
+    {
+      "object": "Lower gallery eave / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 159277,
+        "reversedCorners": 10794,
+        "over60Degrees": 27816,
+        "minimumDot": -0.8829091787338257
+      },
+      "after": {
+        "upwardCorners": 159277,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.7109127044677734
+      }
+    },
+    {
+      "object": "Lower gallery eave / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 135228,
+        "reversedCorners": 16173,
+        "over60Degrees": 27480,
+        "minimumDot": -0.9139636754989624
+      },
+      "after": {
+        "upwardCorners": 135228,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.7701355218887329
+      }
+    },
+    {
+      "object": "Lower gallery eave / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 4684,
+        "reversedCorners": 0,
+        "over60Degrees": 56,
+        "minimumDot": 0.016968995332717896
+      },
+      "after": {
+        "upwardCorners": 4684,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.8834688663482666
+      }
+    },
+    {
+      "object": "First storey main eave / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 79160,
+        "reversedCorners": 5185,
+        "over60Degrees": 14469,
+        "minimumDot": -0.704684317111969
+      },
+      "after": {
+        "upwardCorners": 79160,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.792057454586029
+      }
+    },
+    {
+      "object": "First storey main eave / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 71516,
+        "reversedCorners": 14152,
+        "over60Degrees": 26448,
+        "minimumDot": -0.8320106267929077
+      },
+      "after": {
+        "upwardCorners": 71516,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9479364156723022
+      }
+    },
+    {
+      "object": "First storey main eave / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 10944,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.971484899520874
+      },
+      "after": {
+        "upwardCorners": 10944,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.971484899520874
+      }
+    },
+    {
+      "object": "Second storey eave / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 75875,
+        "reversedCorners": 2631,
+        "over60Degrees": 10268,
+        "minimumDot": -0.6661972999572754
+      },
+      "after": {
+        "upwardCorners": 75875,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.7634817361831665
+      }
+    },
+    {
+      "object": "Second storey eave / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 65552,
+        "reversedCorners": 7032,
+        "over60Degrees": 16424,
+        "minimumDot": -0.37192872166633606
+      },
+      "after": {
+        "upwardCorners": 65552,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.5500364899635315
+      }
+    },
+    {
+      "object": "Second storey eave / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 10176,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9718790054321289
+      },
+      "after": {
+        "upwardCorners": 10176,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9718790054321289
+      }
+    },
+    {
+      "object": "Third storey eave / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 71909,
+        "reversedCorners": 5892,
+        "over60Degrees": 16070,
+        "minimumDot": -0.6322082281112671
+      },
+      "after": {
+        "upwardCorners": 71909,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.6871868371963501
+      }
+    },
+    {
+      "object": "Third storey eave / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 65892,
+        "reversedCorners": 13927,
+        "over60Degrees": 26112,
+        "minimumDot": -0.7940637469291687
+      },
+      "after": {
+        "upwardCorners": 65892,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.7896823287010193
+      }
+    },
+    {
+      "object": "Third storey eave / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 10944,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9713889360427856
+      },
+      "after": {
+        "upwardCorners": 10944,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9713889360427856
+      }
+    },
+    {
+      "object": "Fourth storey eave / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 80379,
+        "reversedCorners": 9442,
+        "over60Degrees": 24122,
+        "minimumDot": -0.8431748151779175
+      },
+      "after": {
+        "upwardCorners": 80379,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.7255599498748779
+      }
+    },
+    {
+      "object": "Fourth storey eave / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 70485,
+        "reversedCorners": 13898,
+        "over60Degrees": 26645,
+        "minimumDot": -0.9288312196731567
+      },
+      "after": {
+        "upwardCorners": 70485,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.8045676946640015
+      }
+    },
+    {
+      "object": "Fourth storey eave / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 12288,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9711605310440063
+      },
+      "after": {
+        "upwardCorners": 12288,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.9711605310440063
+      }
+    },
+    {
+      "object": "Fifth storey pyramidal roof / cover tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 153420,
+        "reversedCorners": 2947,
+        "over60Degrees": 12676,
+        "minimumDot": -0.33269938826560974
+      },
+      "after": {
+        "upwardCorners": 153420,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.8085981607437134
+      }
+    },
+    {
+      "object": "Fifth storey pyramidal roof / concave bed tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 132191,
+        "reversedCorners": 7535,
+        "over60Degrees": 22926,
+        "minimumDot": -0.4518203139305115
+      },
+      "after": {
+        "upwardCorners": 132191,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.8484281897544861
+      }
+    },
+    {
+      "object": "Fifth storey pyramidal roof / lapped ridge tile shells \u2014 estimated",
+      "before": {
+        "upwardCorners": 8334,
+        "reversedCorners": 4,
+        "over60Degrees": 60,
+        "minimumDot": -0.04490584135055542
+      },
+      "after": {
+        "upwardCorners": 8334,
+        "reversedCorners": 0,
+        "over60Degrees": 0,
+        "minimumDot": 0.8809003829956055
+      }
+    }
+  ],
+  "sourceUnchanged": true
+}

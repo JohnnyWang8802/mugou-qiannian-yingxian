@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-06T16:35:57.354Z",
+  "base": "http://127.0.0.1:5173",
+  "browser": "154.0.8037.98",
+  "metrics": {
+    "three": "180",
+    "geometryBuildMs": 346,
+    "drawCalls": 54,
+    "triangles": 3618696,
+    "geometries": 54,
+    "textures": 1,
+    "pixelRatio": 1,
+    "size": [
+      1440,
+      900
+    ],
+    "bounds": [
+      34.18365432182327,
+      65.92082652979298,
+      40.623540891101584
+    ],
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "reducedMotion": false
+  },
+  "frameTimes": {
+    "medianMs": 16.700000000000045,
+    "p95Ms": 18.100000000000364,
+    "sampleFrames": 90,
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36"
+  },
+  "export": {
+    "width": 3840,
+    "height": 2160,
+    "bytes": 1413304
+  },
+  "checks": [
+    "three languages",
+    "storey isolation",
+    "roof visibility",
+    "cutaway",
+    "clay with clipping",
+    "detail views",
+    "separation and reset",
+    "4K PNG",
+    "download action",
+    "320/390/760 CSS-pixel layouts",
+    "legacy",
+    "asset failure fallback"
+  ],
+  "errors": [],
+  "expectedFailureTest": {
+    "response": 503,
+    "message": "Model manifest unavailable",
+    "retryAndLegacyVisible": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-06T18:14:59.686Z",
+  "base": "https://mugou-qiannian-yingxian.pages.dev",
+  "browser": "154.0.8037.98",
+  "groups": 18,
+  "reversedBefore": 109612,
+  "reversedAfter": 0,
+  "smoothMaterialsRetained": true,
+  "metrics": {
+    "three": "180",
+    "geometryBuildMs": 5675,
+    "drawCalls": 42,
+    "triangles": 3576660,
+    "geometries": 54,
+    "textures": 1,
+    "pixelRatio": 1,
+    "size": [
+      1440,
+      1000
+    ],
+    "bounds": [
+      34.18365432182327,
+      65.92082652979298,
+      40.623540891101584
+    ],
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "reducedMotion": false
+  },
+  "errors": []
+}

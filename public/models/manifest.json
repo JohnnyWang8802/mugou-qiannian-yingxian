@@ -1,0 +1,53 @@
+{
+  "source_sha256": "bd981a9877f0fd201378ea0e34d54367480eb5c9651a50a4ec2104ca70c6897b",
+  "units": "metres",
+  "coordinates": "Y up; Blender south becomes +Z",
+  "scope": "Current research candidate; estimated and unfinished historic details retained. Web-only bevel removal and dense-mesh simplification; procedural Blender shaders approximated by PBR materials.",
+  "files": [
+    {
+      "url": "floor-1.glb.gz",
+      "floor": 0,
+      "bytes": 8331662,
+      "decodedBytes": 26993916,
+      "triangles": 940238,
+      "drawCalls": 11
+    },
+    {
+      "url": "floor-2.glb.gz",
+      "floor": 1,
+      "bytes": 5175636,
+      "decodedBytes": 18701788,
+      "triangles": 655100,
+      "drawCalls": 10
+    },
+    {
+      "url": "floor-3.glb.gz",
+      "floor": 2,
+      "bytes": 4656734,
+      "decodedBytes": 16462256,
+      "triangles": 584358,
+      "drawCalls": 10
+    },
+    {
+      "url": "floor-4.glb.gz",
+      "floor": 3,
+      "bytes": 4472862,
+      "decodedBytes": 15501460,
+      "triangles": 554234,
+      "drawCalls": 9
+    },
+    {
+      "url": "floor-5.glb.gz",
+      "floor": 4,
+      "bytes": 8372534,
+      "decodedBytes": 26754172,
+      "triangles": 884764,
+      "drawCalls": 13
+    }
+  ],
+  "instances": 12635,
+  "geometryRepairs": [
+    "Tile shells: rebuild smooth normals and 40-degree hard edges after density reduction.",
+    "Entrance staircase: outward face winding restored; 23 upward-facing treads; vertex positions unchanged."
+  ]
+}
