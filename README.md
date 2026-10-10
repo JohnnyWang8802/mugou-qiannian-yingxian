@@ -10,6 +10,19 @@ The interface is available in Simplified Chinese, Traditional Chinese, and Engli
 - `/?lang=zh-TW`
 - `/?lang=en`
 
+## Interactive design preview
+
+Explore three interface directions using the existing model: **Quiet**, **Atlas**, and **Nocturne**. Switch between them with the bottom picker. All three support Simplified Chinese, Traditional Chinese, and English.
+
+**[Open the updated design preview](https://mugou-qiannian-yingxian.pages.dev/design-review.html?v=2&lang=en)**
+
+The preview includes responsive portrait/landscape layouts, component inspection, synchronized controls, and improved roof depth precision. The main exhibition remains the default homepage while the design direction is being reviewed.
+
+![Atlas interface](artifacts/ui-redesign/05-atlas-desktop.png)
+![Landscape component inspection](artifacts/ui-redesign/16-audit-landscape.png)
+
+See the [UI validation record](prototypes/exhibition/AUDIT-2026-10-10.md) and [roof shimmer notes](artifacts/roof-diagnosis/SPECKLES.md). The preview exports 1920×1080 PNGs; the main exhibition retains its existing export options.
+
 ## Current Blender edition
 
 The current Blender research model is integrated into the main exhibition. Select **Explore** to isolate storeys, hide roofs and enclosure, inspect a cutaway, separate floors, and visit bracket, inner-frame and finial close views. The original exhibition remains available at [legacy.html](https://mugou-qiannian-yingxian.pages.dev/legacy.html).

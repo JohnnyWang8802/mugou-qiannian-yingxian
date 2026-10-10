@@ -5,7 +5,7 @@ export async function exportImage(renderer:T.WebGLRenderer,scene:T.Scene,camera:
  const gl=renderer.getContext();const viewport=gl.getParameter(gl.MAX_VIEWPORT_DIMS) as Int32Array;
  const limit=Math.min(renderer.capabilities.maxTextureSize,gl.getParameter(gl.MAX_RENDERBUFFER_SIZE),viewport[0],viewport[1]);
  if(Math.max(width,height)>limit)throw new Error('设备无法导出 4K，请选择 1920 × 1080。');
- const output=new T.WebGLRenderer({antialias:true,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+ const output=new T.WebGLRenderer({antialias:true,reversedDepthBuffer:renderer.capabilities.reversedDepthBuffer,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
  try{output.localClippingEnabled=renderer.localClippingEnabled;output.setPixelRatio(1);output.setSize(width,height,false);output.outputColorSpace=renderer.outputColorSpace;output.toneMapping=renderer.toneMapping;output.toneMappingExposure=renderer.toneMappingExposure;output.shadowMap.enabled=renderer.shadowMap.enabled;output.shadowMap.type=renderer.shadowMap.type;
  const outputGL=output.getContext();output.render(scene,camera);
  if(outputGL.isContextLost()||outputGL.getError()===outputGL.OUT_OF_MEMORY)throw new Error('显存不足，请尝试 1920 × 1080。');
